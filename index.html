@@ -8,7 +8,10 @@
         <link href="https://fonts.googleapis.com/css2?family=Permanent+Marker&display=swap" rel="stylesheet">
 
         <link rel="stylesheet" type="text/css"  href="./asset/css/style.css" />
+
+        <link id="them-style" rel="stylesheet" type="text/css" href="">
     </head>
+
     <body>
 
         <section class="s1">
@@ -39,10 +42,10 @@
                     <h5 style="text-align: center;line-height: 0;">Personalize Theme</h5>
 
                     <div id="theme-options-wrapper">
-                        <div id="light-mode" class="theme-dot"></div>
-                        <div id="blue-mode" class="theme-dot"></div>
-                        <div id="green-mode" class="theme-dot"></div>
-                        <div id="purple-mode" class="theme-dot"></div>
+                        <div data-mode="light" id="light-mode" class="theme-dot"></div>
+                        <div data-mode="blue" id="blue-mode" class="theme-dot"></div>
+                        <div data-mode="green" id="green-mode" class="theme-dot"></div>
+                        <div data-mode="purple" id="purple-mode" class="theme-dot"></div>
                     </div>
 
                     <p id="settings-note">*Theme option will be saved for<br>your next visit</p>
@@ -127,8 +130,8 @@
                         <div class="post">
                             <img class="thumbnail" src="images/rupesh.JPG">
                             <div class="post-preview">
-                                <h6 class="post-title">Run Buddy</h6>
-                                <p class="post-intro">This is a sentence</p>
+                                <h6 class="post-title">DailyMoods</h6>
+                                <p class="post-intro">Comming soon</p>
                                 <a href="">Read More</a>
                             </div>
                         </div>
@@ -155,11 +158,13 @@
                     <label>Message</label>
                     <textarea class="input-field" name="Message"></textarea>
 
-                    <input id="submit-botton" type="submit" value="Send">
+                    <input id="submit-button" type="submit" value="Send">
         
                 </form>
              </div>
         </section>
+
+        <script type="text/javascript" src="script.js"></script>
 
 
     </body>
