@@ -11,7 +11,7 @@
 
     --previewBg:rgb(252, 250, 242, 0.7);
 
-    --preview-shadow:#f0ead6;
+    --preview-shadow:#b1cadf;
 
 
 }
@@ -261,6 +261,30 @@ cursor: pointer;
 #corner-bottomleft{
     bottom: -5px;
     right: -5px;
+}
+
+.about-wrapper{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(360px,1fr));
+    padding-bottom: 50px;
+    padding-top: 50px;
+    gap: 100px;
+}
+
+#Skills{
+    display: flex;
+    justify-content: space-evenly;
+    background-color: var(--preview-shadow);
+}
+
+.social-links{
+    display: grid;
+    align-content: center;
+    text-align: center;
+}
+
+#social_img{
+    width: 100%;
 }
 
 
