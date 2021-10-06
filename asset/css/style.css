@@ -65,6 +65,12 @@ h6 { font-size: 14px;}
     overflow:auto;
 }
 
+
+#lkicon{
+    height: 50px;
+    width: 50px;
+}
+
 .main-container{
     width: 1200px;
     margin: 0 auto;
@@ -147,7 +153,7 @@ h6 { font-size: 14px;}
    
 }
 
-.left-colum{
+.left-column{
     grid-area: "left-column";
     padding-top: 50px;
     padding-bottom: 50px;
@@ -158,52 +164,19 @@ h6 { font-size: 14px;}
 #profile-pic{
     display: block;
     margin: 0 auto;
-
     height: 200px;
     width: 200px;
     object-fit: cover;
+    transition: transform .2s;
     border: 2px solid var(--bordercolor);
+    
 }
+ #profile-pic:hover{
+transform: scale(1.5);
 
-#theme-options-wrapper{
-display: flex;
-justify-content: center;
-}
 
-.theme-dot{
-    height: 30px;
-    width:30px;
-    border-radius: 50%;
-    background-color: black;
+ }
 
-    margin: 5px;
-    border: 2px solid var(--themedotBoarder);
-
-    -webkit-box-shadow: 8px 5px 6px -1px #000000; 
-    box-shadow: 8px 5px 6px -1px #000000;
-cursor: pointer;
-
-}
-
-.theme-dot:hover{
-    border-width: 5px;
-}
-
-#light-mode{
-    background-color:#fff;
-}
-
-#blue-mode{
-    background-color:#192734;
-}
-
-#green-mode{
-    background-color:#78866b;
-}
-
-#purple-mode{
-    background-color: rgb(148, 15, 236);
-}
 
 #settings-note{
     font-size: 12px;
@@ -212,7 +185,7 @@ cursor: pointer;
 }
 
 
-.right-colum{
+.right-column{
     grid-area: "right-column";
     display: grid;
     align-content: center;
@@ -290,7 +263,9 @@ cursor: pointer;
 
 #social_img{
     width: 100%;
+    
 }
+
 
 .post-wrapper{
     display: grid;
@@ -330,7 +305,7 @@ cursor: pointer;
 
 #contact-me{
     display: block;
-    max-width: 550px;
+    max-width: 600px;
     margin: 0 auto;
     border: 1px solid var(--bordercolor);
     padding: 15px;
