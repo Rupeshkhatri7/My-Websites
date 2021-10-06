@@ -262,7 +262,11 @@ transform: scale(1.5);
 }
 
 #social_img{
-    width: 100%;
+    display: block;
+    margin: 0 auto;
+    height: 270px;
+    width: 600px;
+    border: 2px solid var(--bordercolor);
     
 }
 
